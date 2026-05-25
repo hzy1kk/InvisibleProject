@@ -3,20 +3,20 @@
   --laranja: #d4622a;
   --laranja-glow: #e89550;
   --laranja-deep: #a84818;
-  --laranja-soft: #fdf3eb;
+  --laranja-soft: #f5ebe4;
   --laranja-muted: rgba(212, 98, 42, 0.14);
   --laranja-line: rgba(212, 98, 42, 0.35);
   --azul: #1e5a8a;
   --azul-deep: #0c2340;
   --azul-glow: #4a8bb8;
-  --azul-soft: #eef4f9;
+  --azul-soft: #e3edf7;
   --branco: #ffffff;
-  --bg: #ffefe3;
-  --bg-alt: #ffe4d1;
+  --bg: #e8f1fa;
+  --bg-alt: #dce9f5;
   --bg-elevated: #ffffff;
-  --surface: #ffffff;
-  --text: #0c2340;
-  --text-muted: #5a6b7d;
+  --surface: #f4f8fc;
+  --text: #0a1f33;
+  --text-muted: #3d5268;
   --border: rgba(12, 35, 64, 0.09);
   --border-strong: rgba(12, 35, 64, 0.14);
   --glass: rgba(255, 255, 255, 0.92);
@@ -76,19 +76,19 @@ body {
 }
 
 body.tema-escuro {
-  --bg: #0a1219;
-  --bg-alt: #0f1822;
-  --bg-elevated: #141e2a;
-  --surface: #141e2a;
-  --text: #e8eef4;
-  --text-muted: #94a3b8;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.12);
-  --glass: rgba(20, 30, 42, 0.92);
+  --bg: #0c141f;
+  --bg-alt: #111c2a;
+  --bg-elevated: #162333;
+  --surface: #162333;
+  --text: #e8f0f8;
+  --text-muted: #a8b9cc;
+  --border: rgba(200, 220, 255, 0.1);
+  --border-strong: rgba(200, 220, 255, 0.16);
+  --glass: rgba(18, 28, 42, 0.94);
   --glass-border: var(--border);
-  --sombra: 0 8px 32px rgba(0, 0, 0, 0.35);
-  --laranja-soft: rgba(224, 122, 47, 0.12);
-  --azul-soft: rgba(30, 90, 138, 0.15);
+  --sombra: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --laranja-soft: rgba(224, 122, 47, 0.14);
+  --azul-soft: rgba(74, 139, 184, 0.18);
 }
 
 body.reduzir-movimento *,
@@ -344,14 +344,14 @@ body.tema-escuro .titulo-menor {
   background:
     radial-gradient(ellipse 80% 60% at 20% 0%, rgba(30, 136, 229, 0.18), transparent),
     radial-gradient(ellipse 60% 50% at 90% 80%, rgba(255, 143, 0, 0.15), transparent),
-    linear-gradient(165deg, #e3f2fd 0%, var(--bg) 45%, #fff8e1 100%);
+    linear-gradient(165deg, #d6e8f8 0%, var(--bg) 45%, #eef4fb 100%);
 }
 
 body.tema-escuro .hero {
   background:
-    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(30, 136, 229, 0.25), transparent),
-    radial-gradient(ellipse 60% 50% at 90% 80%, rgba(255, 143, 0, 0.12), transparent),
-    linear-gradient(165deg, #0a1628 0%, var(--bg) 50%, #0d1117 100%);
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(74, 139, 184, 0.28), transparent),
+    radial-gradient(ellipse 60% 50% at 90% 80%, rgba(212, 98, 42, 0.1), transparent),
+    linear-gradient(165deg, #121e2e 0%, var(--bg) 50%, #0c141f 100%);
 }
 
 .hero-bg {
@@ -2212,15 +2212,12 @@ body.tema-escuro .nav-links a.ativo {
   -webkit-text-fill-color: var(--azul-deep);
 }
 
-body.tema-escuro .hero {
-  background:
-    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(212, 98, 42, 0.12), transparent 50%),
-    var(--bg);
-}
-
 body.tema-escuro .titulo-gradiente {
-  color: var(--laranja-glow);
-  -webkit-text-fill-color: var(--laranja-glow);
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #c8dcf0;
+  -webkit-text-fill-color: #c8dcf0;
 }
 
 body.tema-escuro .destaque-box {
@@ -2229,49 +2226,53 @@ body.tema-escuro .destaque-box {
 }
 
 
-/* ═══ Fundo quase monocromático laranja ═══ */
+/* ═══ Fundo azulado suave (laranja como destaque) ═══ */
 :root {
-  --azul-soft: #ffe8d6;
+  --azul-soft: #dceaf5;
 }
 
 body {
-  background-color: #ffead8;
+  background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse 140% 100% at 50% -30%, rgba(244, 160, 97, 0.45), transparent 55%),
-    radial-gradient(ellipse 100% 80% at 0% 50%, rgba(212, 98, 42, 0.2), transparent 50%),
-    radial-gradient(ellipse 100% 80% at 100% 80%, rgba(196, 88, 32, 0.18), transparent 50%),
-    linear-gradient(180deg, #fff0e4 0%, #ffead8 35%, #ffe2cc 100%);
+    radial-gradient(ellipse 140% 100% at 50% -25%, rgba(74, 139, 184, 0.28), transparent 55%),
+    radial-gradient(ellipse 90% 70% at 0% 60%, rgba(30, 90, 138, 0.14), transparent 50%),
+    radial-gradient(ellipse 90% 70% at 100% 80%, rgba(212, 98, 42, 0.1), transparent 50%),
+    linear-gradient(180deg, #f2f7fc 0%, var(--bg) 38%, #ddeaf5 100%);
   background-attachment: fixed;
 }
 
 .hero {
   background:
-    radial-gradient(ellipse 110% 100% at 70% 0%, rgba(232, 149, 80, 0.5), transparent 60%),
-    radial-gradient(ellipse 90% 80% at 0% 100%, rgba(212, 98, 42, 0.35), transparent 55%),
-    linear-gradient(180deg, #ffd9bc 0%, #ffefe3 45%, #ffead8 100%) !important;
+    radial-gradient(ellipse 110% 100% at 70% 0%, rgba(74, 139, 184, 0.35), transparent 60%),
+    radial-gradient(ellipse 90% 80% at 0% 100%, rgba(212, 98, 42, 0.18), transparent 55%),
+    linear-gradient(180deg, #d8e8f6 0%, var(--bg) 48%, #e4eef8 100%) !important;
 }
 
 .hero-bg .orb-1,
-.hero-bg .orb-2,
+.hero-bg .orb-2 {
+  background: radial-gradient(circle at 35% 35%, var(--azul-glow), var(--azul-deep));
+  opacity: 0.35;
+}
+
 .hero-bg .orb-3 {
-  background: radial-gradient(circle at 35% 35%, var(--laranja-glow), var(--laranja-deep));
-  opacity: 0.4;
+  background: radial-gradient(circle at 40% 40%, var(--laranja-glow), var(--laranja-deep));
+  opacity: 0.3;
 }
 
 .hero-bg .grid-3d {
-  opacity: 0.25;
+  opacity: 0.22;
   background-image:
-    linear-gradient(rgba(212, 98, 42, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212, 98, 42, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(30, 90, 138, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 90, 138, 0.08) 1px, transparent 1px);
 }
 
 .secao {
-  background: rgba(255, 236, 220, 0.72);
-  border-top-color: rgba(212, 98, 42, 0.12);
+  background: rgba(232, 241, 250, 0.65);
+  border-top-color: rgba(30, 90, 138, 0.1);
 }
 
 .secao + .secao {
-  border-top: 1px solid rgba(212, 98, 42, 0.14);
+  border-top: 1px solid rgba(30, 90, 138, 0.12);
 }
 
 .secao-escura,
@@ -2287,33 +2288,33 @@ body {
 
 #inicio.hero {
   background:
-    radial-gradient(ellipse 110% 100% at 70% 0%, rgba(232, 149, 80, 0.5), transparent 60%),
-    radial-gradient(ellipse 90% 80% at 0% 100%, rgba(212, 98, 42, 0.35), transparent 55%),
-    linear-gradient(180deg, #ffd9bc 0%, #ffefe3 45%, #ffead8 100%) !important;
+    radial-gradient(ellipse 110% 100% at 70% 0%, rgba(74, 139, 184, 0.35), transparent 60%),
+    radial-gradient(ellipse 90% 80% at 0% 100%, rgba(212, 98, 42, 0.18), transparent 55%),
+    linear-gradient(180deg, #d8e8f6 0%, var(--bg) 48%, #e4eef8 100%) !important;
 }
 
 #escola {
-  background: linear-gradient(180deg, rgba(255, 220, 190, 0.5), rgba(255, 234, 216, 0.3));
+  background: linear-gradient(180deg, rgba(210, 228, 245, 0.55), rgba(232, 241, 250, 0.35));
 }
 
 #causa,
 #desenvolvedor {
-  background: linear-gradient(180deg, rgba(255, 210, 175, 0.55), rgba(255, 228, 205, 0.35));
+  background: linear-gradient(180deg, rgba(200, 220, 240, 0.5), rgba(228, 238, 248, 0.35));
 }
 
 #inscricao {
-  background: linear-gradient(165deg, rgba(255, 200, 160, 0.6), rgba(255, 235, 215, 0.4));
+  background: linear-gradient(165deg, rgba(190, 215, 240, 0.45), rgba(232, 241, 250, 0.4));
 }
 
 #escola .escola-fachada-legenda {
-  background: #ffd4b0;
-  color: var(--laranja-deep);
+  background: #c5d9ec;
+  color: var(--azul-deep);
 }
 
 .cabecalho.scrolled,
 .nav-menu.aberto {
-  background: rgba(255, 240, 228, 0.96);
-  border-color: var(--laranja-line);
+  background: rgba(244, 248, 252, 0.96);
+  border-color: rgba(30, 90, 138, 0.15);
 }
 
 .glass-3d,
@@ -2326,60 +2327,75 @@ body {
 .escola-cta,
 .projeto-aviso,
 .contador-voluntarios {
-  background: rgba(255, 252, 248, 0.92);
-  border-color: rgba(212, 98, 42, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(30, 90, 138, 0.14);
 }
 
 .destaque-box,
 .projeto-aviso {
-  background: linear-gradient(135deg, #ffe0c8 0%, #fff5eb 100%);
+  background: linear-gradient(135deg, #e8f2fa 0%, #ffffff 100%);
 }
 
 .projeto-aviso {
-  border-left-color: var(--laranja-deep);
+  border-left-color: var(--laranja);
 }
 
 .titulo-linha {
-  color: var(--laranja-deep);
+  color: var(--azul-deep);
 }
 
 .titulo-secao {
-  color: var(--laranja-deep);
-  -webkit-text-fill-color: var(--laranja-deep);
+  color: var(--azul-deep);
+  -webkit-text-fill-color: var(--azul-deep);
 }
 
 body a:not(.btn):not(.nav-links a):not(.rodape-redes a) {
-  color: var(--laranja-deep);
+  color: var(--azul);
 }
 
 .campo input,
 .campo select {
-  background: #fff8f2;
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+.campo label {
+  color: var(--text);
 }
 
 .rodape {
-  background: linear-gradient(165deg, #8b3a12 0%, #5c2408 50%, #3d1806 100%);
+  background: linear-gradient(165deg, #0c2340 0%, #143052 50%, #1a3d5c 100%);
   border-top: 4px solid var(--laranja-glow);
 }
 
-/* Modo escuro: monocromático âmbar escuro */
+/* Modo escuro: azul profundo com destaque laranja */
 body.tema-escuro {
-  --bg: #1a1008;
-  --bg-alt: #241408;
-  background-color: #1a1008;
+  --bg: #0c141f;
+  --bg-alt: #111c2a;
+  background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse 120% 80% at 50% 0%, rgba(212, 98, 42, 0.35), transparent 55%),
-    linear-gradient(180deg, #221408 0%, #1a1008 100%);
+    radial-gradient(ellipse 120% 80% at 50% 0%, rgba(74, 139, 184, 0.22), transparent 55%),
+    radial-gradient(ellipse 80% 60% at 100% 100%, rgba(212, 98, 42, 0.08), transparent 50%),
+    linear-gradient(180deg, #121e2e 0%, var(--bg) 100%);
 }
 
 body.tema-escuro .hero,
 body.tema-escuro #inicio.hero {
   background:
-    radial-gradient(ellipse 100% 70% at 80% 0%, rgba(212, 98, 42, 0.4), transparent 50%),
-    linear-gradient(180deg, #2a180c 0%, #1a1008 100%) !important;
+    radial-gradient(ellipse 100% 70% at 80% 0%, rgba(74, 139, 184, 0.28), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(212, 98, 42, 0.12), transparent 50%),
+    linear-gradient(180deg, #141f30 0%, var(--bg) 100%) !important;
 }
 
-body.tema-escuro .secao,
+body.tema-escuro .secao {
+  background: rgba(14, 22, 34, 0.5);
+  border-top-color: rgba(74, 139, 184, 0.12);
+}
+
+body.tema-escuro .secao + .secao {
+  border-top-color: rgba(74, 139, 184, 0.1);
+}
+
 body.tema-escuro #causa,
 body.tema-escuro #desenvolvedor,
 body.tema-escuro #escola,
@@ -2388,35 +2404,92 @@ body.tema-escuro #inscricao {
 }
 
 body.tema-escuro .glass-3d,
+body.tema-escuro .glass,
 body.tema-escuro .card,
-body.tema-escuro .formulario {
-  background: rgba(40, 26, 16, 0.92);
-  border-color: rgba(232, 149, 80, 0.2);
+body.tema-escuro .formulario,
+body.tema-escuro .dif-item,
+body.tema-escuro .destaque-box,
+body.tema-escuro .contador-voluntarios {
+  background: rgba(22, 35, 51, 0.92);
+  border-color: rgba(74, 139, 184, 0.22);
+  color: var(--text);
 }
 
 body.tema-escuro .titulo-secao,
 body.tema-escuro .titulo-linha {
-  color: #ffd4b0;
-  -webkit-text-fill-color: #ffd4b0;
+  color: #f0f6fc;
+  -webkit-text-fill-color: #f0f6fc;
 }
 
-body.tema-escuro .cabecalho.scrolled {
-  background: rgba(26, 16, 8, 0.96);
+body.tema-escuro .hero-slogan {
+  color: var(--text-muted);
 }
 
-/* Legibilidade no fundo laranja */
+body.tema-escuro .titulo-gradiente {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #c8dcf0;
+  -webkit-text-fill-color: #c8dcf0;
+}
+
+body.tema-escuro .secao-kicker {
+  color: var(--azul-glow);
+}
+
+body.tema-escuro .cabecalho.scrolled,
+body.tema-escuro .nav-menu.aberto {
+  background: rgba(12, 20, 31, 0.96);
+  border-color: rgba(74, 139, 184, 0.2);
+}
+
+body.tema-escuro a:not(.btn):not(.nav-links a):not(.rodape-redes a) {
+  color: var(--azul-glow);
+}
+
+body.tema-escuro .campo input,
+body.tema-escuro .campo select {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+body.tema-escuro .campo input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Legibilidade: sempre variáveis de texto */
 .prosa p,
 .subtitulo-secao,
 .hero-desc,
 .dif-item p,
-.card p:last-child {
-  color: #6b4428;
+.card p:last-child,
+.lista-tarefas li,
+.projeto-item p {
+  color: var(--text-muted);
+}
+
+.hero-desc,
+.prosa p {
+  color: var(--text-muted);
+}
+
+.subtitulo-secao {
+  color: var(--text-muted);
 }
 
 body.tema-escuro .prosa p,
 body.tema-escuro .subtitulo-secao,
-body.tema-escuro .hero-desc {
-  color: #d4b89a;
+body.tema-escuro .hero-desc,
+body.tema-escuro .dif-item p,
+body.tema-escuro .card p:last-child,
+body.tema-escuro .lista-tarefas li {
+  color: var(--text-muted);
+}
+
+body.tema-escuro .hero-badge,
+body.tema-escuro .float-badge {
+  color: var(--text);
 }
 
 /* ═══ Hero corrigido + imagem visitas ═══ */
@@ -2518,4 +2591,40 @@ body.tema-escuro .hero-desc {
     margin-left: 0;
     margin-right: auto;
   }
+}
+
+/* Contraste extra: textos em cards e navegação */
+.nav-links a {
+  color: var(--text-muted);
+}
+
+.nav-links a:hover,
+.nav-links a.ativo {
+  color: var(--azul-deep);
+}
+
+body.tema-escuro .nav-links a {
+  color: var(--text-muted);
+}
+
+body.tema-escuro .nav-links a:hover,
+body.tema-escuro .nav-links a.ativo {
+  color: var(--azul-glow);
+}
+
+.marca-texto span {
+  color: var(--text-muted);
+}
+
+body.tema-escuro .marca-texto strong {
+  color: var(--text);
+}
+
+.secao-kicker {
+  color: var(--azul);
+}
+
+body.tema-escuro .dev-nome,
+body.tema-escuro .form-msg {
+  color: var(--text);
 }
