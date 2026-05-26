@@ -273,12 +273,13 @@ body.tema-escuro .nav-links a.ativo {
 /* Section typography */
 .secao-kicker {
   display: block;
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  color: var(--laranja);
-  letter-spacing: 0.06em;
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--azul);
   margin-bottom: 0.75rem;
-  opacity: 0.9;
 }
 
 .titulo-secao {
@@ -630,8 +631,9 @@ body.tema-escuro .btn-ghost {
 
 .float-badge {
   position: absolute;
-  font-family: var(--mono);
-  font-size: 0.7rem;
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 600;
   padding: 0.45rem 0.85rem;
   border-radius: 999px;
   background: var(--glass);
@@ -760,7 +762,7 @@ body.tema-escuro .destaque-box strong {
 }
 
 .card-tag {
-  font-family: var(--mono);
+  font-family: var(--font);
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -1026,8 +1028,10 @@ body.tema-escuro .tech-tags span {
   font-size: 0.9rem;
 }
 
+.rodape-nota,
+.rodape-nota,
 .rodape-mono {
-  font-family: var(--mono);
+  font-family: var(--font);
   font-size: 0.7rem;
   opacity: 0.6;
   letter-spacing: 0.1em;
