@@ -2305,7 +2305,7 @@ body {
 .secao-escura,
 #causa,
 #desenvolvedor,
-#escola,
+#parceria,
 #projeto,
 #ano-voluntariado,
 .secao-form,
@@ -2320,7 +2320,7 @@ body {
     linear-gradient(180deg, #d8e8f6 0%, var(--bg) 48%, #e4eef8 100%) !important;
 }
 
-#escola {
+#parceria {
   background: linear-gradient(180deg, rgba(210, 228, 245, 0.55), rgba(232, 241, 250, 0.35));
 }
 
@@ -2333,7 +2333,7 @@ body {
   background: linear-gradient(165deg, rgba(190, 215, 240, 0.45), rgba(232, 241, 250, 0.4));
 }
 
-#escola .escola-fachada-legenda {
+#parceria .parceria-nota {
   background: #c5d9ec;
   color: var(--azul-deep);
 }
@@ -2425,7 +2425,7 @@ body.tema-escuro .secao + .secao {
 
 body.tema-escuro #causa,
 body.tema-escuro #desenvolvedor,
-body.tema-escuro #escola,
+body.tema-escuro #parceria,
 body.tema-escuro #inscricao {
   background: transparent;
 }
@@ -2654,4 +2654,90 @@ body.tema-escuro .marca-texto strong {
 body.tema-escuro .dev-nome,
 body.tema-escuro .form-msg {
   color: var(--text);
+}
+
+/* Marca sem logo da escola */
+.marca-solo .marca-texto {
+  padding-left: 0;
+}
+
+.marca-solo .marca-texto strong {
+  font-size: 1.15rem;
+}
+
+/* Causa — pilares de ajuda */
+.causa-pilares {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.causa-pilar {
+  padding: 1.35rem 1.25rem;
+  border-radius: var(--raio);
+}
+
+.causa-pilar-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--azul), var(--laranja));
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.causa-pilar h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--azul-deep);
+}
+
+body.tema-escuro .causa-pilar h3 {
+  color: var(--text);
+}
+
+.causa-pilar p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.causa-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.causa-cta p {
+  margin: 0;
+  flex: 1 1 280px;
+}
+
+/* Parceria compacta */
+.secao-parceria {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.parceria-nota {
+  margin: 1.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+@media (max-width: 900px) {
+  .causa-pilares {
+    grid-template-columns: 1fr;
+  }
 }
